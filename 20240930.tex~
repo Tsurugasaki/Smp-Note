@@ -1,0 +1,47 @@
+\documentclass[a4paper,12pt]{jsarticle}
+\usepackage{enumerate}
+\usepackage{ascmac}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{url}
+\usepackage[dvipdfmx]{graphicx} 
+\usepackage{here}
+\begin{document}
+\noindent
+\begin{enumerate}[label=\underline{$Step$.(\roman*)}]
+\item Al closure equations to be solved for $v_{\text{Ab}}:$ 
+\begin{equation}
+n_{\text{Al}}^{\text{Jade}}+(n_{\text{Al}}^{\text{Ab}}+n_{\text{Al}}^{\text{Anl}}p_{\text{Anl}}+n_{\text{Al}}^{\text{Ne}}p_{\text{Ne}})v_{\text{Ab}}=0.
+\end{equation}
+Then $v_{\text{Anl}}=p_{\text{Anl}}v_{\text{Ab}};v_{\text{Ne}}=p_{\text{Ne}}v_{\text{Ab}};$ and metasomatic flux are
+\begin{equation}
+v_i^{\text{Meta}} = -n_i^{\text{Ab}}-(p_{\text{Anl}}n_i^{\text{Anl}}+p_{\text{Ne}}n_i^{\text{Ne}})v_{\text{Ab}}-n_i^{\text{H}_2\text{O}}v_{\text{H}_2\text{O}}\ (i=\text{Si, Na, H}).
+\end{equation}
+\item At contact 1, equation to be solved for $v_{\text{Ab}}^1$ and $v_{\text{Ne}}^1:$
+\begin{align}
+&A_{\text{AbAb}}v_{\text{Ab}}^1 + A_{\text{AbNe}}v_{\text{Ne}}^1 = -A_{\text{AbMet1}}-A_{\text{AbJade}};\\
+&A_{\text{NeAb}}v_{\text{Ab}}^1 + A_{\text{NeNe}}v_{\text{Ne}}^1 = -A_{\text{NeMet1}}-A_{\text{NeJade}};
+\end{align}
+
+\item At contact 2, equation to be solved for $v_{\text{Ab}}^2$, $v_{\text{Ne}}^2$ and $v_{\text{Ab}}^2:$
+\begin{align}
+&A_{\text{AbAb}}(v_{\text{Ab}}^1+v_{\text{Ab}}^2) +A_{\text{AbAnl}}v_{\text{Anl}}^2= -A_{\text{AbMet1}}-A_{\text{AbJade}}-A_{\text{AbNe}}v_{\text{Ne}};\\
+&A_{\text{AnlAnl}}v_{\text{Anl}}^2+A_{\text{AnlAb}}(v_{\text{Ab}}^1+v_{\text{Ab}}^2) = -A_{\text{AnlMet1}}-A_{\text{AnlJade}}-A_{\text{AnlNe}}v_{\text{Ne}};\\
+&v_{\text{Ne}}=v_{\text{Ne}}^1+v_{\text{Ne}}^2.
+\end{align}
+
+\item At contact 3, equation to be solved for $v_{\text{Ab}}^3$ and $v_{\text{Anl}}^3:$
+\begin{align}
+&A_{\text{AnlAnl}}(v_{\text{Anl}}^2+v_{\text{Anl}}^3) = -A_{\text{AnlMet1}}-A_{\text{AnlJade}}-A_{\text{AnlNe}}v_{\text{Ne}}-A_{\text{AnlAb}}v_{\text{Ab}};\\
+&v_{\text{Ab}}=v_{\text{Ab}}^1+v_{\text{Ab}}^2+v_{\text{Ab}}^3.
+\end{align}
+
+\item At contact 4, equation to be solved for $v_{\text{Anl}}^4:$
+\begin{equation}
+v_{\text{Anl}}=v_{\text{Anl}}^2+v_{\text{Anl}}^3+v_{\text{Anl}}^4.
+\end{equation}
+
+\end{enumerate}\end{document}
